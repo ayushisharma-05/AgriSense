@@ -1,12 +1,5 @@
-<<<<<<< HEAD
 pandas
 numpy
 scikit-learn
 streamlit
 mlflow
-=======
-pandas
-numpy
-scikit-learn
-streamlit
->>>>>>> 19137ea1d5975c14c34245cd8df0c89bb93be8b7
