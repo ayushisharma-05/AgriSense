@@ -3,5 +3,6 @@ __pycache__/
 *.pyc
 models/model.pkl
 
-mlruns/
 mlflow.db
+mlruns/
+__pycache__/
