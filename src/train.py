@@ -4,7 +4,14 @@ import pickle
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
+<<<<<<< HEAD
+import sys
+sys.path.append(".")
 
+from mlflow_logger import log_experiment
+=======
+
+>>>>>>> 19137ea1d5975c14c34245cd8df0c89bb93be8b7
 # Load dataset
 df = pd.read_csv("data/Crop_recommendation.csv")
 
@@ -35,6 +42,14 @@ y_pred = model.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 print("Accuracy:", round(accuracy * 100, 2), "%")
 
+<<<<<<< HEAD
+log_experiment(
+    model,
+    accuracy
+)
+
+=======
+>>>>>>> 19137ea1d5975c14c34245cd8df0c89bb93be8b7
 # Save model
 with open("models/model.pkl", "wb") as file:
     pickle.dump(model, file)
